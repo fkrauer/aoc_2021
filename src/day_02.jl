@@ -1,7 +1,7 @@
 using CSV
 using DataFrames
 
-data = CSV.read("day_02.txt", header=0, DataFrame) 
+data = CSV.read("data/day_02.txt", header=0, DataFrame) 
 
 # Part 1
 forward = (data 

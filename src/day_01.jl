@@ -1,5 +1,5 @@
 # Part 1
-data = open(f->read(f, String), "day_01.txt") |> f->split(f, "\n") |> a->map(s->parse(Int, s), a)
+data = open(f->read(f, String), "data/day_01.txt") |> f->split(f, "\n") |> a->map(s->parse(Int, s), a)
 sum(diff(data).>0)
 
 # Part 2

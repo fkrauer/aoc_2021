@@ -2,7 +2,7 @@ using CSV
 using DataFrames
 
 # Part 1
-data = open(f->read(f, String), "day_03.txt") |> f->split(f, "\r\n") 
+data = open(f->read(f, String), "data/day_03.txt") |> f->split(f, "\r\n") 
 data = DataFrame(split.(data, ""), :auto)
 data[!,:] = tryparse.(Int64, data[:,:])
 data = DataFrame(permutedims(Matrix(data)), :auto)
